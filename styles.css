@@ -7,3 +7,7 @@ body {
 #board {
     background-image: url(bgImg.png);
 }
+
+canvas {
+    touch-action: none;
+}
