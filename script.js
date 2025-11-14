@@ -65,7 +65,7 @@ window.onload = function() {
     this.document.addEventListener("keydown", moveBird);
 
     // Mobile touch controls
-document.addEventListener("touchstart", function(e) {
+board.addEventListener("touchstart", function(e) {
     e.preventDefault();
     velocityY = -6;
 
