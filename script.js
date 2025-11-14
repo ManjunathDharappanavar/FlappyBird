@@ -63,6 +63,21 @@ window.onload = function() {
     this.setInterval(placePipes, 1500);
 
     this.document.addEventListener("keydown", moveBird);
+
+    // Mobile touch controls
+document.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    velocityY = -6;
+
+    if (gameOver) {
+        bird.y = birdY;
+        pipeArray = [];
+        score = 0;
+        velocityY = 0;
+        gameOver = false;
+    }
+}, { passive: false });
+
 }
 
 function update() {
